@@ -8,4 +8,4 @@ RUN gem i -N rake
 RUN git clone --depth=1 https://github.com/matsumoto-r/ngx_mruby.git
 ADD build_config.rb ngx_mruby/build_config.rb
 RUN cd ngx_mruby && sh build.sh
-RUN cp mruby/bin/mruby /usr/local/bin
+RUN cp ngx_mruby/mruby/bin/mruby /usr/local/bin
