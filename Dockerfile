@@ -3,7 +3,7 @@ MAINTAINER OKUMURA Takahiro <hfm.garden@gmail.com>
 
 ADD build_config.rb /tmp/build_config.rb
 
-RUN yum -y -q install make gcc git rubygems openssl-devel curl wget bison mariadb-server mariadb-devel \
+RUN yum -y -q install make gcc git rubygems openssl-devel curl wget bison mariadb-server mariadb-devel which ruby-devel \
   && gem update --system 2.6.1 \
   && gem i -N bundler -v 1.12.5 \
   && gem i -N rake \
