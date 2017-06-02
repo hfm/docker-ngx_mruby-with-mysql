@@ -33,5 +33,6 @@ MRuby::Build.new do |conf|
 
   # use unit test on ngx_mruby
   conf.gem :github => 'iij/mruby-mtest'
+  conf.gem :github => 'iij/mruby-require'
   conf.gem :github => 'hfm/mruby-test-mysqld'
 end
